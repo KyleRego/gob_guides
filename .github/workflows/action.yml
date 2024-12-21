@@ -26,5 +26,5 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIVATE_SSH_KEY }}
-          source: "./dist"
+          source: "./client/dist"
           target: ${{ secrets.GOB_GUIDES_CLIENT_DEPLOY_DIRECTORY }}
