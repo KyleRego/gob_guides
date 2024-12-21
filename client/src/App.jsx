@@ -14,7 +14,7 @@ function App() {
           <p></p>
 
           <figure>
-              <video controls width="1080">
+              <video controls>
                 <source src="/themesscookingpizzasDec12_2024.mp4" type="video/mp4" />
               </video>
 
