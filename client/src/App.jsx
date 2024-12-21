@@ -18,8 +18,8 @@ function App() {
                 <source src="/themesscookingpizzasDec12_2024.mp4" type="video/mp4" />
               </video>
 
-          <figcaption>This is me cooking servery pineapple pizzas for about 100k cooking xp/hr
-            (misclicks were only because of the lag from running the screen recorder):</figcaption>
+          <figcaption>Me cooking servery pineapple pizzas at the Mess south of the Hosidius statue for about 100k cooking xp/hr
+            (with misclicks only because of the lag from running the screen recorder):</figcaption>
 
           </figure>
         

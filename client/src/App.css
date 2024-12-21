@@ -42,5 +42,6 @@
 }
 
 video {
-  max-width: 95%;
+  width: 100%;
+  max-width: 967px;
 }
