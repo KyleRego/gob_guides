@@ -15,7 +15,7 @@ function App() {
 
           <figure>
               <video controls width="1080">
-                <source src="/public/themesscookingpizzasDec12_2024.mp4" type="video/mp4" />
+                <source src="/themesscookingpizzasDec12_2024.mp4" type="video/mp4" />
               </video>
 
           <figcaption>This is me cooking servery pineapple pizzas for about 100k cooking xp/hr
