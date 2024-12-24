@@ -26,7 +26,6 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
   min-height: 100vh;
   padding-bottom: 6rem;
 }
@@ -66,4 +65,20 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  max-width: 1000px;
+  width: 95vw;
+}
+
+video {
+  max-width: 1000px;
+  width: 95vw;
+  padding: 0 0rem;
 }
