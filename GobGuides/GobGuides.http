@@ -1,0 +1,6 @@
+@GobGuides_HostAddress = http://localhost:5143
+
+GET {{GobGuides_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,6 @@
+obj/
+bin/
+
+gob_guides_dev.db
+gob_guides_dev.db-shm
+gob_guides_dev.db-wal
