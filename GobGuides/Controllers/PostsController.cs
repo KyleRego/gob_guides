@@ -2,14 +2,18 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 using GobGuides.Model;
+using GobGuides.Data;
 
 namespace GobGuides.Controllers;
 
 public class PostsController : AppController
 {
     [Authorize, HttpPost]
-    public IActionResult CreatePost()
+    public async Task<IActionResult> CreatePost(Post post, AppDbContext db)
     {
+        db.Add(post);
+        await db.SaveChangesAsync();
+
         return Ok("This is my protected data");
     }
 

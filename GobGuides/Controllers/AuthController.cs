@@ -14,13 +14,18 @@ public record LoginDto
 public class AuthController : AppController
 {
     [HttpPost]
-    public async Task<IActionResult> Login(LoginDto dto, UserManager<AppUser> userManager)
+    public async Task<IActionResult> Login(LoginDto dto,
+                            UserManager<AppUser> userManager,
+                            SignInManager<AppUser> signInManager)
     {
         AppUser? user = await userManager.FindByEmailAsync(dto.Email);
         if (user == null) return Unauthorized("Invalid credentials");
 
-        bool passwordValid = await userManager.CheckPasswordAsync(user, dto.Password);
+        bool passwordValid = await userManager.CheckPasswordAsync(
+                                                    user, dto.Password);
         if (!passwordValid) return Unauthorized("Invalid credentials");
+
+        await signInManager.SignInAsync(user, false);
 
         return Ok("Login successful");
     }
@@ -30,5 +35,11 @@ public class AuthController : AppController
     {
         await signInManager.SignOutAsync();
         return Ok("Logout successful");
+    }
+
+    [Authorize, HttpPost("CheckAuthState")]
+    public IActionResult CheckAuthState()
+    {
+        return Ok("You are authenticated.");
     }
 }

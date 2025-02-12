@@ -34,7 +34,7 @@ function Login() {
         </form>
 
         <div className="mt-4 d-flex justify-content-start">
-            <Link to={"/"}>Home</Link>
+            <Link to={"/admin"}>Admin</Link>
         </div>
     </div>;
 }
