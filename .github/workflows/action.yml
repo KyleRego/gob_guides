@@ -1,6 +1,7 @@
 name: my-github-action
 
-on: [push]
+on:
+  workflow_dispatch:
 
 jobs:
   build-and-deploy-react-client:
@@ -28,3 +29,24 @@ jobs:
           key: ${{ secrets.PRIVATE_SSH_KEY }}
           source: "./client/dist"
           target: ${{ secrets.GOB_GUIDES_CLIENT_DEPLOY_DIRECTORY }}
+
+  build-and-deploy-api:
+    environment: development
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+            dotnet-version: '8.0.x'
+      - name: Publish self-contained executable
+        run: dotnet publish GobGuides -r linux-arm64 --self-contained true
+      - name: SCP dotnet executable to VM
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PRIVATE_SSH_KEY }}
+          source: "./GobGuides/bin/Release/net8.0/linux-arm64/publish"
+          target: ${{ secrets.GOB_GUIDES_API_DEPLOY_DIRECTORY }}
