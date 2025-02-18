@@ -25,7 +25,8 @@ export default function Index() {
               Guides
             </h2>
             <ol>
-              <li><Link to="/the-mess">The Mess (cooking training)</Link></li>
+              <li><Link to="/the-mess">The Mess</Link></li>
+              <li><Link to="/activity-pairings">Activity Pairings</Link></li>
             </ol>
 
           </section>
