@@ -1,37 +1,38 @@
 import { Link } from "react-router-dom";
 
 export default function Index() {
+    const skillingGuides = [
+        ["/gotr-and-stars", "Guardians of the Rift and mining stars"],
+        ["/the-mess", "The Mess"]
+    ]
+
     return (
     <>
       <div>
         <section>
           <h1>Lilgobslayerguides.NET</h1>
 
-          <p>Practical Old School Runescape Ultimate Ironperson blog and guides from one of the most bankless, Knight Lil Gob The Slayer</p>
+          <p>Practical Old School Runescape Ultimate Ironperson guides from Sir Lil Gob The Slayer</p>
         </section>
 
-        <div className="d-flex justify-content-around">
-          <section>
-            <h2>
-              Blog
-            </h2>
-            <ol className="list-group">
-              <li ><Link to="/2025/Feb/12">Initial post</Link></li>
-            </ol>
-          </section>
+        <div className="d-flex justify-content-center">
+          <section style={{width: "300px"}}>
+          <h2>
+            Skilling Guides
+          </h2>
+          <div className="list-group">
+            {skillingGuides.map((entry, i) =>
+                <Link className="list-group-item list-group-item-action"
+                        to={entry[0]} key={i}
+                        title={entry[1]}>
+                    {entry[1]}
+                </Link>)
+            }
 
-          <section>
-            <h2>
-              Guides
-            </h2>
-            <ol>
-              <li><Link to="/the-mess">The Mess</Link></li>
-              <li><Link to="/activity-pairings">Activity Pairings</Link></li>
-            </ol>
+          </div>
 
           </section>
         </div>
-        
       </div>
 
     </>
