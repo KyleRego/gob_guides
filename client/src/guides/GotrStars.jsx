@@ -33,7 +33,7 @@ export default function ActivityPairings() {
           </p>
 
           <p>
-            Shooting stars will give you stardust which can be used to buy a celestial ring as well as charge it (up to 10,0000 charges). This ring will increase the rate of mining guardian essence in GOTR which is the main reason it makes sense to alternate GOTR with mining stars. Excess stardust can be used to buy bags of gems for crafting experience, as well as a chance for uncut dragonstones.
+            Shooting stars will give you stardust which can be used to buy a celestial ring as well as charge it (up to 10,000 charges). This ring will increase the rate of mining guardian essence in GOTR which is the main reason I think it makes sense to alternate GOTR with mining stars. Excess stardust can be used to buy bags of gems for crafting experience, as well as a chance for uncut dragonstones.
           </p>
 
           <div className="d-flex justify-content-center">
