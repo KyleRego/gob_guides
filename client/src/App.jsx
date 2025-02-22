@@ -2,12 +2,12 @@ import { Outlet } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 function App() {
-    return <div id="app" className="bg-dark text-white w-100 min-vh-100 h-100 d-flex flex-column">
-      <div className="bg-primary d-flex p-3 justify-content-between">
+    return <div id="app" className="bg-black text-white w-100 min-vh-100 h-100 d-flex flex-column">
+      <div className="bg-black d-flex p-3 justify-content-between">
         <span><Link to="/">Gob guides</Link></span>
         <span><Link to="/login">Login</Link></span>
       </div>
-      <div className="flex-grow-1 container">
+      <div className="bg-dark text-secondary flex-grow-1 container py-2 mb-4">
         <Outlet />
       </div>
       

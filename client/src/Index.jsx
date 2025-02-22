@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function Index() {
     const skillingGuides = [
-        ["/gotr-and-stars", "Guardians of the Rift and mining stars"],
+        ["/gotr-and-stars", "Guardians of the Rift"],
+        ["/stars", "Mining stars"],
         ["/the-mess", "The Mess"]
     ]
 
@@ -12,7 +13,7 @@ export default function Index() {
         <section>
           <h1>Lilgobslayerguides.NET</h1>
 
-          <p>Practical Old School Runescape Ultimate Ironperson guides from Sir Lil Gob The Slayer</p>
+          <p>Practical Old School Runescape Ultimate Ironperson guides from Knight Lil Gob the Slayer</p>
         </section>
 
         <div className="d-flex justify-content-center">
