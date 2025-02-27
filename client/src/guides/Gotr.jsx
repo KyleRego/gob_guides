@@ -24,15 +24,14 @@ export default function Gotr() {
           <h3>Ring of the Elements</h3>
 
           <p>
-            This ring is charged with the elemental runes and law runes to provide teleports to the elemental altars (wind, water, earth, fire) which is useful for Mahogany homes (earth), Ali Morrisane to buy runes (fire), traveling to the shooting stars in Lumbridge swamp (water), traveling to the Rimmington mine (air), many clue steps. One disadvantage lest you try to use it as a second rune pouch is it can only be uncharged at a bank. To store it in a looting bag, you need to uncharge it as well. (Who says ultimate people don't use banks?)
+            The Ring of the Elements is charged with elemental runes and law runes and can be used to teleport to the 4 elemental altars (wind, water, earth, fire). The ring can only be uncharged at a bank so it cannot be used as a second rune pouch. To store it in a looting bag, it must be uncharged.
           </p>
-
       
           <div className="d-flex flex-row column-gap-3 align-items-center justify-content-around flex-wrap">
-              <Image src="/air-altar.png" text="Air altar teleport"    width="500px" />
-              <Image src="/water-altar.png" text="Water altar teleport" width="500px" />
-              <Image src="/earth-altar.png" text="Earth altar teleport" width="500px" />
-              <Image src="/fire-altar.png" text="Fire altar teleport" width="500px" />
+              <Image src="/air-altar.png" text="Air altar teleport. This teleport is useful for going to Rimmington and Port Sarim, as well as the farm patches south of Falador, although the Explorer's ring teleport is better for that."    width="500px" />
+              <Image src="/water-altar.png" text="Water altar teleport. This Lumbridge swamp teleport is useful for shooting stars, clue steps, and going to the Lumbridge swamp dungeon for the Tears of Guthix." width="500px" />
+              <Image src="/earth-altar.png" text="Earth altar teleport. This is a very noteworthy teleport for the closeness to the Varrock sawmill, which is very useful for Mahogany homes." width="500px" />
+              <Image src="/fire-altar.png" text="Fire altar teleport. This is mainly useful for getting to Ali Morrisane, but it is also useful for going to mine gold in the Al Kharid mine and shooting stars in the area." width="500px" />
           </div>
 
           <p>
