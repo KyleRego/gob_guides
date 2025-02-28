@@ -11,19 +11,19 @@ export default function Index() {
     <>
       <div>
         <section>
-          <h1>Lilgobslayerguides.NET</h1>
+          <h1 className="fs-1">Lilgobslayerguides.NET</h1>
 
           <p>Practical Old School Runescape Ultimate Ironperson guides from Knight Lil Gob the Slayer</p>
         </section>
 
         <div className="d-flex justify-content-center">
           <section style={{width: "300px"}}>
-          <h2>
+          <h2 className="fs-2 mb-2">
             Skilling Guides
           </h2>
           <div className="list-group">
             {skillingGuides.map((entry, i) =>
-                <Link className="list-group-item list-group-item-action"
+                <Link className="list-group-item list-group-item-secondary list-group-item-action"
                         to={entry[0]} key={i}
                         title={entry[1]}>
                     {entry[1]}
