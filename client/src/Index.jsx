@@ -4,7 +4,8 @@ export default function Index() {
     const skillingGuides = [
         ["/gotr-and-stars", "Guardians of the Rift"],
         ["/stars", "Mining stars"],
-        ["/the-mess", "The Mess"]
+        ["/the-mess", "The Mess"],
+        ["frost-crabs", "Frost Crabs"]
     ]
 
     return (
@@ -13,13 +14,13 @@ export default function Index() {
         <section>
           <h1 className="fs-1">Lilgobslayerguides.NET</h1>
 
-          <p>Practical Old School Runescape Ultimate Ironperson guides from Knight Lil Gob the Slayer</p>
+          <p>Practical Old School Runescape Ultimate Iron guides - Lil Gob Slayer</p>
         </section>
 
         <div className="d-flex justify-content-center">
           <section style={{width: "300px"}}>
           <h2 className="fs-2 mb-2">
-            Skilling Guides
+            Skilling
           </h2>
           <div className="list-group">
             {skillingGuides.map((entry, i) =>

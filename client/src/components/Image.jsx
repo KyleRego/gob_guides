@@ -3,7 +3,9 @@ export default function Image({src, text, width}) {
         <img style={{maxWidth: "100%"}} src={src} />
 
         <figcaption>
-            {text}
+            <p>
+                {text}
+            </p>
         </figcaption>
     </figure>
 }

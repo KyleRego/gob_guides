@@ -6,6 +6,7 @@ import Admin from './Admin';
 import TheMess from './guides/TheMess';
 import Gotr from './guides/Gotr';
 import Stars from './guides/Stars';
+import FrostCrabs from './guides/FrostCrabs';
 
 export const router = createBrowserRouter([{
     path: '/',
@@ -16,6 +17,7 @@ export const router = createBrowserRouter([{
         { path: '/admin', element: <Admin /> },
         { path: '/the-mess', element: <TheMess /> },
         { path: '/gotr-and-stars', element: <Gotr /> },
-        { path: '/stars', element: <Stars /> }
+        { path: '/stars', element: <Stars /> },
+        { path: '/frost-crabs', element: <FrostCrabs /> }
     ]
 }]);

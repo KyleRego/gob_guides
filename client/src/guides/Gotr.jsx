@@ -6,11 +6,9 @@ export default function Gotr() {
           <h1>Guardians of the Rift</h1>
 
           <p>
-            One of the best methods to train runecrafting as an ultimate ironperson is the <a href="https://oldschool.runescape.wiki/w/Guardians_of_the_Rift">Guardians of the Rift</a> which requires completion of The Temple of the Eye quest. This minigame requires a lot of attention, but it pairs well with mining shooting stars which is very AFK.
+            <a href="https://oldschool.runescape.wiki/w/Guardians_of_the_Rift">Guardians of the Rift</a> requires completion of Temple of the Eye; here you can craft all types of runes in a much easier way that runecrafting by running to the altars.
           </p>
-
-          <h2>Guardians of the Rift (GOTR)</h2>
-
+  
           <p>
             GOTR is more efficient with more inventory spaces so you will want to deathbank (Hespori is good at 65 farming) and bring your pickaxe, rune pouch, celestial ring, amulet of the eye (to teleport there), robes of the eye, or graceful set (depending on what you have). The rune pouch allows you to have house teleports (useful for getting to stars with house teleport portals) and also store runes that you craft. After you have done GOTR for a while, you will obtain the robes of the eye (which can be stored in the magic wardrobe and increase runecrafting experience), the amulet of the eye (which allows you to teleport to GOTR and can be retrieved from the Lumbridge guide), and rune pouches from searching the rewards rift. Rune pouches cannot be stored, so it is recommended to leave GOTR with enough reward searches so that when you return later, you can search the rift enough times to recover your pouches. In addition, the lost bag is a reward which serves no purpose but is 10/10 fashionscape, and the Ring of the Elements allows teleporting to the elemental altars (wind, water, earth, and fire) which is useful especially for Mahogany Homes (teleporting to near the Varrock sawmill).
           </p>

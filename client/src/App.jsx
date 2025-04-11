@@ -7,7 +7,7 @@ function App() {
         <span><Link to="/">Gob guides</Link></span>
         <span><Link to="/login">Login</Link></span>
       </div>
-      <div className="card card-body p-4 bg-dark text-secondary flex-grow-1 container py-2 mb-4">
+      <div className="p-4 text-secondary flex-grow-1 container py-2 mb-4">
         <Outlet />
       </div>
       
